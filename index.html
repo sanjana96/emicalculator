@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>EMI Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="loan-amount">Loan Amount (₹)</label>
+                <input type="number" id="loan-amount" placeholder="Enter loan amount">
+            </div>
+            <div class="input-group">
+                <label for="interest-rate">Interest Rate (% per annum)</label>
+                <input type="number" id="interest-rate" placeholder="Enter interest rate">
+            </div>
+            <div class="input-group">
+                <label for="loan-tenure">Loan Tenure (months)</label>
+                <input type="number" id="loan-tenure" placeholder="Enter loan tenure">
+            </div>
+            <button id="calculate-btn">Calculate EMI</button>
+            
+            <div class="result" id="result">
+                <h2>Your EMI Details</h2>
+                <div class="result-item">
+                    <span>Monthly EMI:</span>
+                    <span id="monthly-emi">₹ 0</span>
+                </div>
+                <div class="result-item">
+                    <span>Total Interest:</span>
+                    <span id="total-interest">₹ 0</span>
+                </div>
+                <div class="result-item">
+                    <span>Total Amount:</span>
+                    <span id="total-amount">₹ 0</span>
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer-footer">
+            <p id="disclaimer-link">Disclaimer</p>
+        </div>
+        
+        <!-- Popup for disclaimer -->
+        <div id="disclaimer-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <h3>Disclaimer</h3>
+                <p>Disclaimer: This EMI calculator provides estimated results for informational purposes only.
+                Actual loan terms, interest rates, and payments may vary.
+                Skillrage is not responsible for financial decisions made using this tool.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
